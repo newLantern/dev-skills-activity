@@ -1,0 +1,211 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+html {
+  font-size: 13px;
+	font-family: Arial,sans-serif;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+
+/* Universal Styles */
+.container{
+  background-image: -webkit-linear-gradient(top, #254275 0%, #355CA0 100%);
+  background-image: linear-gradient(to bottom, #254275 0%, #355CA0 100%);
+	display: inline-block;
+	position: relative;
+}
+.close {
+	text-align: right;
+	color: #c5c5c5;
+	font-family: Arial,sans-serif;
+	font-size: 1.1rem;
+	width: 100%; 
+	display: inline-block; 
+	float: left; 
+	height: 40px;
+}
+.closeX {
+	padding: 14px 10px;
+	display: inline-block; 
+	float: right;
+}
+.closeText {
+	float: right;
+	line-height: 40px;
+}
+.title {
+	font-family: Oxygen,Arial,sans-serif;
+	color: white;
+	font-size: 1.8rem;
+	display: inline-block;
+	clear: both;
+}
+.title span {
+	font-weight: bold;
+}
+.image {
+	display: inline-block; 
+	float:left;
+	position: relative;
+}
+.blueBox {
+	width: 92px; 
+	height: 92px;
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	transition: .3s ease all;
+	-webkit-transition: .3s ease all;
+}
+.blueBox:hover {
+	background-color: #f7f55f;
+}
+.imageClipper {
+	display: inline-block; 
+	float: left;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.mainImage {
+	position: relative;
+	top: -30px;
+}
+.subtitle {
+	color: #c9ddff;
+	text-transform: uppercase;
+	padding: 14px 0;
+	font-size: 1.1rem;
+	transition: .3s ease all;
+	-webkit-transition: .3s ease all;
+}
+.container:hover .subtitle{
+	text-shadow: 0px 0px 3px black;
+}
+.description {
+	color: white;
+	text-align: left;
+	display: inline-block; 
+	line-height: 180%;
+	font-size: 1.1rem;
+}
+.learnMore {
+	text-align: right;
+	color: #f7f55f;
+	font-size: 1rem;
+	font-family: Oxygen,Arial,sans-serif;
+	width: 100%; 
+	display: inline-block; 
+	float: left; 
+	height: 40px;
+	clear: both;
+}
+.learnMoreText {
+	float: right;
+	display: inline-block;
+	line-height: 40px;
+}
+.learnMoreImg {
+	float: right;
+	display: inline-block;
+	padding: 16px;
+}
+a {
+	color: inherit;
+	border: none;
+}
+
+/* Small Screen Styles */
+@media (max-width: 540px) {
+	.container {
+		width: 282px;
+		left: 18px;
+	}
+	.title {
+		text-align: center; 
+		width: 90%;
+		padding: 0 5%;
+		float: left;
+	}
+	.image {
+		width: 246px;
+		height: 160px; 
+		padding: 10px 18px;
+	}
+	.mainImage {
+		width: 100%; 
+	}
+	.subtitle {
+		width: 100%; 
+		float: left;
+		text-align: center;
+		font-size: 1.2rem;
+	}
+	.description {
+		width: 234px; 
+		float: left;
+		padding: 0 24px;
+		font-size: 1.2rem;
+	}
+	.blueBox {
+		left: -8px;
+		top: 40px;
+		top: calc(50% - 46px);
+	}
+	.learnMore, .close {
+		font-size: 1.15rem;
+	}
+}
+/* Large Screen Styles */
+@media (min-width: 540px) {
+	.container {
+		width: 508px;
+		left: 18px;
+	}
+	.title {
+		text-align: left;
+		float: right; 
+		width: 258px;
+		padding-right: 10px;
+	}
+	.image {
+		width: 200px;
+		height: 180px;
+		padding: 0 20px;
+	}
+	.mainImage {
+		width: 115%; 
+	}
+	.subtitle {
+		text-align: left;
+		width: 258px; 
+		float: right;
+		padding-right: 10px;
+	}
+	.description {
+		text-align: left;
+		width: 238px;
+		float: right;
+		padding-right: 30px;
+	}
+	.blueBox {
+		left: -12px;
+		top: 40px;
+		top: calc(50% - 46px);
+	}
+}
